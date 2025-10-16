@@ -36,62 +36,57 @@ Screenshots :
 
 Login Page :
 
-![Login Page] ('/static/img/sc/login.png')
+![Login Page](/static/img/sc/login.png)
 
 
 Home Dashboard :
 
-![Home Page] ('/static/img/sc/home.png')
+![Home Page](/static/img/sc/home.png)
 
 
 Events :
 
-![Event Page] ('/static/img/sc/event.png')
+![Event Page](/static/img/sc/event.png)
 
 
 Add New Event:
 
-![Add Event Page] ('/static/img/sc/addNewEvent.png')
+![Add Event Page](/static/img/sc/addNewEvent.png)
 
 
 Edit Event :
 
-![Edit Page] ('/static/img/sc/editEvent.png')
+![Edit Page](/static/img/sc/editEvent.png)
 
 
 Attendees :
 
-![Attendees Page] ('/static/img/sc/attendee.png')
+![Attendees Page](/static/img/sc/attendee.png)
 
 
 Add Attendee :
 
-![Add Attendee Page] ('/static/img/sc/addAttendee.png')
+![Add Attendee Page](/static/img/sc/addAttendee.png)
 
 
 Edit Attendee :
 
 
-![Edit Attendee Page] ('/static/img/sc/editAttendee.png')
-
-
-Delete Attendee :
-
-![Delete Attendee Page]('/static/img/sc/deleteAttendee.png')
+![Edit Attendee Page](/static/img/sc/editAttendee.png)
 
 
 Tickets :
 
-![Ticket Page] ('/static/img/sc/ticket.png')
+![Ticket Page](/static/img/sc/ticket.png)
 
 
 Ticket Tracking :
 
-![Ticket Tracking Page] ('/static/img/sc/tickettrack.png')
+![Ticket Tracking Page](/static/img/sc/trackticket.png)
 
 Ticket Report :
 
-![Ticket Report Page] ('/static/img/sc/ticketReport.png')
+![Ticket Report Page](/static/img/sc/ticketReport.png)
 
 
 
@@ -104,11 +99,11 @@ Usage :
 
 2) Install Required Packages 
 
-     pip install -r requirements.txt
+          pip install -r requirements.txt
 
 3) Run 
 
-    python app.py
+           python app.py
 
 
 
