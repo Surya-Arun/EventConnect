@@ -1,0 +1,73 @@
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.hero
+{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url('/static/img/editform.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.box
+{
+    background:linear-gradient(rgba(255,255,255,0.2));
+    padding: 50px;
+    border: 5px solid black;
+    border-radius: 50px;
+}
+
+button
+{
+    width:100%;
+    padding: 20px;
+    border-radius: 20px;
+    font-size: 1.1em;
+    font-weight: bold;
+    background:linear-gradient(135deg,rgb(151, 127, 20),rgb(199, 199, 7));
+    color:black;
+    border:4px solid black;
+    cursor: pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    transform: scale(1.05);
+}
+
+.fmele
+{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.fmele label{
+
+    width:100px;
+    font-size: large;
+    font-weight: bold;
+    color:white;
+
+}
+
+.fmele input
+{
+    padding:10px;
+    border-radius: 10px;
+    border:3px solid black;
+
+}
+
+a{
+    text-decoration: none;
+    color:black;
+}

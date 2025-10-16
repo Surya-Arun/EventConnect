@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Add Attendee Form</title>
+        <meta charset='UTF-8'>
+        <meta name='viewport' content='width=device-width'>
+        <link rel='stylesheet' href='/static/addAttendeeForm.css'>
+    </head>
+    <body>
+        {% with messages=get_flashed_messages(with_categories=true)%}
+            {% if messages %}
+            {% for i,j in messages%}
+                <script>
+                    Swal.fire({
+                        icon:"{{'success' if i=='success' else 'error'}}",
+                        title:'{{j}}'
+                    });
+                </script>
+            {% endfor %}
+            {% endif %}
+        {% endwith %}
+   
+        <div class='container'>
+
+            <div class='box'>
+                <h2>Register Attendee</h2>
+                <form method='post' action='/addAttendeeForm/{{edata.eid}}'>
+                    <div class='fmele'>
+                        <label>Name</label>
+                        <input type='text' required name='name'>
+                    </div>
+                    <div class='fmele'>
+                        <label>Email</label>
+                        <input type='email' required name='email'>
+                    </div>
+                    <div class='fmele'>
+                        <label>Mobile Number</label>
+                        <input type='tel'required name='mobileNo'>
+                    </div>
+                    <div class='fmele'>
+                        <label>Registration Status</label>
+                        <input type='text' required name='status'>
+                    </div>
+                    <div class='fmele'>
+                        <button type='submit'>Add Attendee</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

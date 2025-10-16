@@ -1,0 +1,74 @@
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.hero
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('/static/img/loginbg1.jpg');
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    height:100vh;
+}
+
+.box
+{
+    margin-top: 50px;
+    background: rgba(255, 255, 255, 0.15);
+    padding:50px;
+    border-radius: 20px;
+    border:2px solid white;
+}
+
+.fmip
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+input{
+    padding: 10px;
+    border-radius: 5px;
+    border:2px solid red;
+
+}
+
+label{
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-right: 20px;
+    color:whitesmoke;
+}
+button{
+    width:100%;
+    padding: 12px;
+    font-size: large;
+    font-weight: bold;
+    background:linear-gradient(135deg,rgb(234, 7, 7),rgb(13, 13, 210));
+    color:white;
+    border-radius: 10px;
+    border : 2px solid white;
+    transition:0.3s;
+    cursor: pointer;
+}
+
+button:hover
+{
+    background-color: blue;
+    color:wheat;
+}
+
+h1{
+    color:wheat;
+    text-align: center;
+    padding-bottom: 20px;
+}

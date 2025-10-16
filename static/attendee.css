@@ -1,0 +1,93 @@
+*
+{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.cards
+{
+
+    padding: 150px;
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap:80px;
+    background: url('/static/img/attbg.jpg');
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    position: relative;
+    
+}
+
+.card{
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: center;
+    padding:20px;
+    background:linear-gradient(rgba(255,255,255,0.6));
+    border:2px solid black;
+    border-radius: 30px;
+    transition:0.3s;
+    cursor: pointer;
+}
+
+.card:hover{
+    transform: scale(1.1);
+
+}
+.cards img{
+    height:100%;
+    width:100%;
+    border-radius: 5px;
+
+}
+
+button{
+    padding: 20px;
+    width:100%;
+    margin-top:10px;
+    border-radius: 20px;
+    font-size:1.1em;
+    font-weight: bold;
+    background:linear-gradient(135deg,violet,blue);
+    transition:0.3s;
+    border: 3px solid black;
+  
+    
+}
+
+button:hover
+{
+    transform:scale(1.05);
+    background:linear-gradient(135deg,blue,violet);
+}
+
+p{
+    font-size: 20px;
+    font-weight:bold;
+    padding-bottom: 10px;
+    color:rgb(79, 5, 5);
+}
+a{
+    text-decoration: none;
+    color:whitesmoke;
+}
+
+.btn {
+    position: fixed;           
+    top: 20px;                 
+    right: 20px;             
+    z-index: 1000;        
+}
+
+#back {
+    color: white;
+    border: none;
+    padding: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    border:3px solid black;
+}

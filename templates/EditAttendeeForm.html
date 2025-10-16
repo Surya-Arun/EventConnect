@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Edit Attendee Form</title>
+        <meta charset='UTF-8'>
+        <meta name='viewport' content='width=device-width'>
+        <link rel='stylesheet' href='/static/addAttendeeForm.css'>
+    </head>
+    <body>
+        <div class='container'>
+            <div class='box'>
+                {% if userdata %}
+                <form method='post' action='/editAttendeeForm/{{userdata.aid}}/{{userdata.eid}}'>
+                    <div class='fmele'>
+                        <label>Name</label>
+                        <input type='text' required name="name" value="{{userdata.name}}">
+                    </div>
+                    <div class='fmele'>
+                        <label>Email</label>
+                        <input type='email' required name="email" value="{{userdata.email}}">
+                    </div>
+                    <div class='fmele'>
+                        <label>Mobile Number</label>
+                        <input type='tel'required name="mobileNo" value="{{userdata.mobileNo}}">
+                    </div>
+                    <div class='fmele'>
+                        <label>Registration Status</label>
+                        <input type='text' required name="status" value="{{userdata.status}}">
+                    </div>
+                    <div class='fmele'>
+                        <button type='submit'>Edit Attendee</button>
+                    </div>
+                </form>
+                {% endif %}
+            </div>
+        </div>
+    </body>
+</html>

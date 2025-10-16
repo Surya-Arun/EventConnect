@@ -1,0 +1,102 @@
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.hero
+{
+    min-height: 100vh;
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('/static/img/eventform4.jpg');
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.formbox 
+{
+  
+    background:linear-gradient(rgba(255,255,255,0.3));
+    border:5px solid rgb(218, 80, 103);
+    padding:50px 50px 50px 0px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    
+}
+
+.fmele
+{
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.fmele label{
+    width:120px;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-right:20px;
+    text-align: right;
+    color:white;
+    text-shadow:10px 10px 40px rgba(254, 92, 92, 0.9);
+    
+    
+}
+h1{
+    text-align: center;
+    margin-left: 50px;
+    margin-bottom: 30px;
+    color:rgb(233, 227, 229);
+    font-weight: bold;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow:20px 20px 20px rgba(195, 22, 106, 0.3);
+}
+
+.fmele input{
+    padding:10px;
+    border-radius:10px;
+    height:40px;
+    border:2px solid palevioletred;
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.3);
+
+}
+
+.dt
+{
+    position:relative;
+    right:25px;
+}
+.fmbtn
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+button
+{
+    width: 100%;
+    padding: 20px;
+    margin-left: 20px;
+    border-radius: 20px;
+    transition:0.3s;
+    cursor: pointer;
+    font-weight: bold;
+    font-size:1.1em;
+    background-color:rgb(254, 114, 138);
+    color:black;
+    border:2px solid black;
+}
+
+button:hover{
+    background-color: brown;
+
+}

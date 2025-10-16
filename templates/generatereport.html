@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Generate Report Page</title>
+        <meta charset='UTF-8'>
+        <meta name='viewport' content='width=device-width'>
+        <link rel='stylesheet' href='/static/trackTicket.css'>
+    </head>
+    <body>
+        <div class='container'>
+            <div class='tab'>
+                <table>
+                    <tr>
+                        <th>EventID</th>
+                        <th>Event Name</th>
+                        <th>Tickets Sold</th>
+                        <th>Tickets Available</th>
+                        <th>Revenue</th>
+                    </tr>
+                    
+                        {% if ticketdata %}
+                            {% for i in ticketdata %}
+                            <tr>
+                                <td>{{i.eid}}</td>
+                                <td>{{i.eventname}}</td>
+                                <td>{{i.sold}}</td>
+                                <td>{{i.available}}</td>
+                                <td>{{i.revenue}}</td>
+                            </tr>
+                            {% endfor %}
+                        {% endif %}
+                </table>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Attendee Info Page</title>
+        <meta charset='UTF-8'>
+        <meta name='viewport' content='width=device-width initial-scale=1.0'>
+        <link rel='stylesheet' href='/static/manageAttendee.css'>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    </head>
+    <body>
+        {% with messages=get_flashed_messages(with_categories=true)%}
+            {% if messages %}
+            {% for i,j in messages%}
+                <script>
+                    Swal.fire({
+                        icon:"{{'success' if i=='success' else 'error'}}",
+                        title:'{{j}}'
+                    });
+                </script>
+            {% endfor %}
+            {% endif %}
+        {% endwith %}
+        <div class='hero'>
+            
+            <div class='btn'>
+                {% if eventdata %}
+                    <button type='button' id='back'>Back</button>
+                    <button type='button' class='add'><a href='/addAttendeeForm/{{eventdata.eid}}'>+ Add New Attendee</a></button>
+                {% endif %}
+            </div>
+            <div class='tab'>
+                <table>
+                    <tr>
+                        <th>Name</th>
+                        <th>Mobile No.</th>
+                        <th>Email</th>
+                        <th>Registration Status</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
+                    </tr>
+                    {% if attendeedata%}
+                        {% for i in attendeedata %}
+                            <tr>
+                                <td>{{i.name}}</td>
+                                <td>{{i.mobileNo}}</td>
+                                <td>{{i.email}}</td>
+                                <td>{{i.status}}</td>
+                                <td><a href='/editAttendeeForm/{{i.aid}}/{{eventdata.eid}}'>Edit</a></td>
+                                <td><a href='/deleteAttendee/{{i.aid}}//{{eventdata.eid}}'>Delete</a></td>
+                            </tr>
+                        {% endfor %}
+                    {% endif %}
+                </table>
+            </div>
+        </div>
+        <script>
+           document.getElementById('back').addEventListener('click',function()
+            {
+                window.location.replace('/attendee')
+
+            });
+        </script>
+    </body>
+</html>

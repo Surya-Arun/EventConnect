@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Import CSV Page</title>
+        <meta charset='UTF-8'>
+        <meta name='viewport' content='width=device-width initial-scale=1.0'>
+        <link rel='stylesheet' href='/static/importcsv.css'>
+    </head>
+    <body>
+        {% with messages=get_flashed_messages(with_categories=true)%}
+            {%if messages%}
+                {%for i,j in messages%}
+                    <script>
+                        Swal.fire({
+                            icon:"{{'success' if i=='success' else 'error'}}",
+                            title:"{{j}}"
+                        });
+                    </script>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+        <div class='container'>
+            <div class='fmbox'>
+                <form method='POST' action='/importcsv' enctype='multipart/form-data'>
+                    <div class='fmele'>
+                        <input type='file' accept='.csv' required name='csvfile'>
+                    </div>
+                    <div class='fmele'>
+                        <button type='submit'>Import CSV</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

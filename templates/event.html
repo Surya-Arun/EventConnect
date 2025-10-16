@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Event Page</title>
+        <meta charset='UTF-8'>
+        <meta name='viewport' content='width=device-width initial-scale=1.0'>
+        <link rel='stylesheet' href='/static/event.css'>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    </head>
+    <body>
+       
+        <div class='hero'>
+            <div class='first'>
+                <div class='bt'>
+                    <Button type='button' id='back'>Back</Button>
+                </div>
+                <div class='search'>
+                    <input type='search' placeholder="Search Events by title or date" id='searchBar'>
+                </div>
+                <div class='add'>
+                    <button><a href='/addEventForm'>&plus; Add Event</a></button>
+                    <button><a href='/importcsv'>Import CSV File</a></button>
+                </div>
+            </div>
+            {% with messages = get_flashed_messages(with_categories=true) %}
+                {% if messages %}
+                    {% for category, msg in messages %}
+                        <script>
+                            Swal.fire({
+                                icon: "{{ 'success' if category == 'success' else 'error' }}",
+                                title: "{{ msg }}"
+                            });
+                        </script>
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+            <div class='cards'>
+                    {% if eventdata %}
+                        {% for i in eventdata %}
+                        <div class='card'>
+                            <p class='hd'>{{ i.title }}</p>
+                            <img src='/static/img/eventbg3.jpg'>
+                            <p>Description : {{ i.description }}</p>
+                            <p class='datte'>Date : {{ i.date }}</p>
+                            <p>Location : {{ i.location }}</p>
+                            <p>Capacity : {{ i.capacity }}</p>
+                            <p>Price : {{i.price}} </p>
+                            <div class='btn'>
+                            <button><a href='/editEventForm/{{i.eid}}'>Edit</a></button>
+                            <button id='dt'><a href='/deleteEvent/{{i.eid}}'>Delete</a></button>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    {% endif %}
+            </div>
+            <video class='vdo' src='/static/img/eventvdo.mp4' autoplay muted loop></video>
+        </div>
+         <script src='/static/js/event.js'></script>
+         <script>
+            document.getElementById('back').addEventListener('click',function()
+            {
+                window.location.replace('/homedashboard');
+            });
+        </script>
+    </body>
+</html>
+                

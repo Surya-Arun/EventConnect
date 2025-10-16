@@ -1,0 +1,74 @@
+*
+{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body 
+{
+    background-color: white;
+}
+.container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+    flex-direction: column;
+    gap:20px;
+    
+}
+
+.tab
+{
+    padding:80px;
+    display: grid;  
+    
+ 
+}
+
+tr
+{
+    background-color: white;
+
+}
+
+tr td,th
+{
+    padding: 30px;
+    color:black;
+    border:2px solid rgb(16, 1, 1);
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+button
+{
+    padding: 20px;
+    border-radius: 20px;
+    background-color: blue;
+    color:white;
+    cursor: pointer;
+    border:2px solid white;
+    font-weight: bold;
+    font-size: 16px;
+    margin-left: 500px;
+}
+
+button:hover{
+    background-color: red;
+    color:black;
+    transform: scale(1.05);
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+th{
+    background-color: rgb(66, 53, 53);
+    color: white;
+}

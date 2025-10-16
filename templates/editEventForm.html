@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Edit Form</title>
+        <meta charset='UTF-8'>
+        <meta name='viewport' content='width=device-width'>
+        <link rel='stylesheet' href='/static/editEventForm.css'>
+    </head>
+    <body>
+        <div class='hero'>
+            <div class='box'>
+                <form method='post' action='/editEventForm/{{eventt.eid}}'>
+                    <div class='fmele'>
+                        <label>Title</label>
+                        <input type='text' required name='title' value="{{eventt.title}}">
+                    </div>
+                    <div class='fmele'>
+                        <label>Description</label>
+                        <input type='text' required name='description' value="{{eventt.description}}">
+                    </div>
+                    <div class='fmele'>
+                        <label>Date</label>
+                        <input type='date'required name='date' value="{{eventt.date}}">
+                    </div>
+                    <div class='fmele'>
+                        <label>Location</label>
+                        <input type='text' required name='location' value="{{eventt.location}}">
+                    </div>
+                    <div class='fmele'>
+                        <label>Capacity</label>
+                        <input type='number' required name='capacity' value="{{eventt.capacity}}">
+                    </div>
+                    <div class='fmele'>
+                        <label>Price</label>
+                        <input type='number' required name='price' value="{{eventt.price}}">
+                    </div>
+                    <div class='fmele'>
+                        <button type='submit'>Save Changes</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

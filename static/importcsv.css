@@ -1,0 +1,59 @@
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.container
+{
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('/static/img/csvbg.jpg');
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.fmbox
+{
+    background:linear-gradient(rgba(255,255,255,0.12));
+    padding: 40px;
+    border-radius: 20px;
+    border : 3px solid rgb(219, 175, 40)
+}
+
+.fmele
+{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+button{
+    width:60%;
+    padding: 15px;
+    border-radius: 10px;
+    background: linear-gradient(135deg,yellow,red);
+    transition: 0.3s;
+    cursor: pointer;
+    border:3px solid black;
+    font-size:1.05em;
+    font-weight: bold;
+}
+
+button:hover
+{
+    transform: scale(1.1);
+    background: linear-gradient(135deg,red,yellow);
+}
+
+input
+{
+    padding: 20px;
+    color: white;
+    background-color:rgb(255,255,255,0.17);
+    border-radius: 30px;
+}

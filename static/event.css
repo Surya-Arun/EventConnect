@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; 
+
+}
+
+.vdo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.search input {
+    padding: 15px 30px;
+    border-radius: 30px;
+    width: 300px;
+    max-width: 90%;
+    margin-top:30px;
+    margin-bottom: 40px;
+    border: none;
+    outline: none;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 100px;
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 15px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    transition: 0.3s;
+    border: 3px solid rgb(232, 239, 28);
+}
+
+.card:hover
+{
+    background-color: black;
+    transform: scale(1.02);
+    border:2px solid red;
+
+}
+
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+.card p {
+    color: wheat;
+    padding: 5px 0;
+}
+
+.hd {
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: white !important;
+    margin-bottom: 10px;
+    
+}
+
+.first
+{
+    display: flex;
+    justify-content: space-evenly;
+    width:100%;
+
+}
+.add{
+    margin-top:25px;
+    
+}
+
+.add button{
+    padding:20px;
+    border-radius: 30px;
+    font-size:1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-right: 30px;
+    
+}
+
+.add button:hover{
+    color:whitesmoke;
+    background:linear-gradient(135deg,rgb(35, 35, 162),rgb(5, 5, 89)) !important;
+    border:2px solid white;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color:whitesmoke;
+}
+
+
+.btn button
+{
+    padding : 15px;
+    font-size: 1.1em;
+    font-weight: bold;
+    border-radius: 15px;
+    border:2px solid red;
+    transition:0.3s;
+    width:40%;
+    cursor: pointer;
+
+}
+
+.btn{
+    padding-top:10px;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.btn button:hover{
+    background-color: brown;
+    color:white;
+    border:2px solid white;
+}
+
+.bt
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.bt button{
+    padding: 15px;
+    margin-left:20px;
+    border-radius:20px;
+    background-color: rgb(19, 18, 18);
+    color:white;
+    font-size: 1.1em;
+    font-weight: bold;
+    border:2px solid yellowgreen;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.bt button:hover{
+    background-color: white;
+    color: black;
+}

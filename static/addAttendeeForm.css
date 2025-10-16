@@ -1,0 +1,104 @@
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.container
+{
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('/static/img/addattendeeform2.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    flex-direction: column;
+    gap: 40px;
+
+}
+
+.box
+{
+    background:linear-gradient(rgba(255,255,255,0.17));
+    padding: 30px;
+    border-radius: 20px;
+    border:2px solid white;
+
+}
+
+.fmele
+{
+    display:flex;
+    align-items: center;
+    padding:10px;
+}
+
+.fmele label
+{
+    padding: 10px;
+    min-width:200px;
+    font-size: large;
+    font-weight: bold;
+    color:white;
+
+}
+.fmele input
+{
+    padding:15px;
+    border-radius: 10px;
+    border:3px solid rgb(5, 96, 207);
+}
+
+button
+{
+    width:100%;
+    padding: 10px;
+    border-radius:10px;
+    margin-top:20px;
+    font-size: 1.1em;
+    font-weight: bold;
+    background:linear-gradient(135deg,rgb(5, 96, 207),rgb(122, 119, 185));
+    border:2px solid blue;
+    cursor: pointer;
+}   
+
+button:hover
+{
+    transform: scale(1.03);
+}
+
+h2{
+    text-align: center;
+    font-size:30px;
+    font-weight: bold;
+    padding-bottom: 20px;
+    color:white;
+}
+
+#bk {
+    width:200px ;
+    border-radius: 16px;
+    background: linear-gradient(90deg, #3f73ce, #77aee4);
+    color: #1a237e;
+    font-size: 1.25em;
+    font-weight: bold;
+    border: 2.5px solid #2670c9;
+    letter-spacing: 1px;
+}
+#bk:hover {
+    color:black;
+    background: linear-gradient(90deg, #3460a2, #3f73ce);
+    border: 2.5px solid #274178;
+    transform: scale(1.06);
+}
+
+.btn
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+}

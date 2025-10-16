@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ticket Page</title>
+        <meta charset='UTF-8'>
+        <meta name='viewport' content='width=device-width'>
+        <link rel='stylesheet' href='/static/ticket.css'>
+    </head>
+    <body>
+        <div class='tkt'>
+            <button><a href='/generatereport'>Generate Report</a></button>
+        </div>
+        <div class='cards'>
+            {% if eventdata %}
+                {% for i in eventdata %}
+                    <div class='card'>
+                        <p>{{i.title}}</p>
+                        <img src='/static/img/ticketbg.jpg'>
+                        <button><a href='/trackTicket/{{i.eid}}'>Track Tickets</a></button>
+                    </div>
+                {% endfor %}
+            {%endif %}
+        </div>
+    </body>
+</html>

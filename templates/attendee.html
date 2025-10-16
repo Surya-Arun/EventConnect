@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Attendee Page</title>
+        <meta charset='UTF-8'>
+        <meta name='viewport' content='width=device-width'>
+        <link rel='stylesheet' href='/static/attendee.css'>
+    </head>
+    <body>
+        <div class='btn'>
+            <button type='button' id='back'>Back</button>
+        </div>
+        <div class='cards'>
+
+            {% if eventdata %}
+                {% for i in eventdata %}
+                    <div class='card'>
+                        <p>{{i.title}}</p>
+                        <img src='/static/img/attendees1.webp'>
+                        <button><a href='/manageAttendee/{{i.eid}}'>Manage Attendees</a></button>
+                    </div>
+                {% endfor %}
+            {% endif %}
+            </div>
+            <script>
+                document.getElementById('back').addEventListener('click',function()
+                {
+                    window.location.replace('/homedashboard')
+                });
+            </script>
+    </body>
+</html>

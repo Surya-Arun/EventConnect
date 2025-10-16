@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Event Form</title>
+        <meta charset='UTF-8'>
+        <meta name='viewport' content='width=device-width initial-scale=1.0'>
+        <link rel='stylesheet' href='/static/addEventForm.css'>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    </head>
+    <body>
+        <div class='hero'>
+            {% with messages = get_flashed_messages(with_categories=true) %}
+    {% for category, msg in messages %}
+      <script>
+        Swal.fire({
+          icon: "{{ 'success' if category == 'success' else 'error' }}",
+          title: "{{ msg }}"
+        });
+      </script>
+    {% endfor %}
+{% endwith %}
+
+            <form method='post' action='/addEventForm'>
+                <div class='formbox'>
+                    <h1>Register New Event!</h1>
+                    <div class='fmele'>
+                        <label>Title</label>
+                        <input type='text' required placeholder="Enter name of Event" name='title'>
+                    </div>
+                    <div class='fmele'>
+                        <label>Description</label>
+                        <input type='text' required placeholder="Provide short Description" name='description'>
+                    </div>
+                    <div class='fmele'>
+                        <label class='dt'>Date</label>
+                        <input type='date' required name='date'>
+                    </div>
+                    <div class='fmele'>
+                        <label>Location</label>
+                        <input type='text' required name='location'>
+                    </div>
+                    <div class='fmele'>
+                        <label>Capacity</label>
+                        <input type='number' required name='capacity'>
+                    </div>
+                    <div class='fmele'>
+                        <label>Price</label>
+                        <input type='number' required name='price'>
+                    </div>
+                    <div class='fmbtn'>
+                        <button type='submit'>Submit</button>
+                        <button type='reset'>Reset</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

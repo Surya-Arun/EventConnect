@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home Dashboard Page</title>
+        <meta charset='UTF-8'>
+        <meta name='viewport' content='width=device-width initial-scale=1.0'>
+        <link rel='stylesheet' href='/static/homedashboard.css'>
+    </head>
+    <body>
+        <div class='hero'>
+            
+            <div class='navbar'>
+                <h1>EventConnect</h1>
+                <ul>
+                    <li><a href='/homedashboard'>Home</a></li>
+                    <li><a href='/event'>Events</a></li>
+                    <li><a href='/attendee'>Attendees</a></li>
+                    <li><a href='/ticket'>Tickets</a></li>
+                    <li><a href='/importcsv'>Import CSV</a></li>
+                    <li><a href='/logout'>Logout</a></li>
+                </ul>
+            </div>
+            <video class='vdo' autoplay muted loop src='/static/img/bgvdo.mp4'></video>
+            <div class='cards'>
+                
+                <div class='card' id='e1'>
+                    <p>Manage Events</p>
+                    <img src='/static/img/eventbg3.jpg'>
+                </div>
+                <div class='card' id='a1'>
+                    <p>Manage Attendees</p>
+                    <img src='/static/img/attendees1.webp'>
+                </div>
+                <div class='card' id='t1'>
+                    <p>Manage Tickets</p>
+                    <img src='/static/img/ticket.jpg'>
+                </div>
+            </div>
+
+            
+
+        </div>
+        <script>
+            document.getElementById('e1').addEventListener('click',function()
+            {
+                window.location.href='/event';
+            });
+
+            document.getElementById('a1').addEventListener('click',function()
+            {
+                window.location.href='/attendee'
+            });
+            document.getElementById('t1').addEventListener('click',function()
+            {
+                window.location.href='/ticket'
+            });
+
+        </script>
+    </body>
+</html>

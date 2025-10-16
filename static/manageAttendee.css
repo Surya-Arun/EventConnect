@@ -1,0 +1,92 @@
+*
+{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero
+{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top:50px;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('/static/img/addattendeeform1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.btn
+{
+    display: flex;
+    gap:100px;
+    justify-content: space-between;
+
+}
+
+.btn button
+{
+    padding:20px;
+    border-radius: 20px;
+    font-size: large;
+    font-weight: bold;
+    margin-bottom: 10px;
+    min-width:100px;
+    cursor: pointer;
+    background:linear-gradient(135deg,red,yellow);
+    border:3px solid black;
+    transition: 0.3s;
+}
+
+.btn button:hover{
+    background:linear-gradient(135deg,yellow,red);
+    border-color: rgb(28, 11, 11);
+    transform:scale(1.05)
+}
+
+.tab
+{
+    display: grid;
+    padding: 30px;
+}
+tr td,th
+{
+    padding: 20px;
+    background-color: rgb(255,255,255,0.12);
+    border:4px solid whitesmoke;
+    font-size: large;
+    font-weight: bold;
+}
+
+tr td
+{
+    color:rgb(250, 245, 245);
+}
+
+a
+{
+    text-decoration: none;
+    color: black;
+}
+
+td a{
+    color:rgb(212, 238, 12);
+}
+
+th{
+    color:whitesmoke;
+}
+
+tr th{
+
+    background-color: black;
+}
+
+.bk
+{
+    background-color: black;
+}

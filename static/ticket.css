@@ -1,0 +1,83 @@
+*
+{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+.cards
+{
+    padding: 150px;
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap:80px;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('/static/img/ticketg2.jpg');
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    position: relative;
+    
+}
+
+.card{
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: center;
+    padding:20px;
+    background:linear-gradient(rgba(255,255,255,0.15));
+    border:2px solid white;
+    border-radius: 30px;
+}
+
+.card:hover
+{
+    transform: scale(1.05);
+}
+
+.cards img{
+    height:100%;
+    width:100%;
+    border-radius: 5px;
+    border-radius: 10px;
+
+}
+
+button{
+    padding: 20px;
+    width:100%;
+    margin-top:10px;
+    border-radius: 20px;
+    font-size:1.1em;
+    font-weight: bold;
+    background:rgb(199, 140, 4);
+    color:rgb(0, 0, 0);
+    border: 3px solid black;
+    cursor: pointer;
+}
+
+button:hover
+{
+    transform: scale(1.05);
+}
+
+p{
+    font-size: 20px;
+    font-weight:bold;
+    padding-bottom: 10px;
+    color:wheat;
+}
+
+.tkt
+{
+    position: fixed;
+    top:20px;
+    right:20px;
+    z-index:1000;
+
+}

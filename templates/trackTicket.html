@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Track Ticket Page</title>
+        <meta charset='UTF-8'>
+        <meta name='viewport' content='width=device-width'>
+        <link rel='stylesheet' href='/static/trackTicket.css'>
+    </head>
+    <body>
+        <div class='container'>
+            <div class='tab'>
+                <table>
+                    <tr>
+                        <th>EventID</th>
+                        <th>Event Name</th>
+                        <th>Tickets Sold</th>
+                        <th>Tickets Available</th>
+                        <th>Revenue</th>
+                    </tr>
+                    <tr>
+                        <td>{{ticketdata.eid}}</td>
+                        <td>{{ticketdata.eventname}}</td>
+                        <td>{{ticketdata.sold}}</td>
+                        <td>{{ticketdata.available}}</td>
+                        <td>{{ticketdata.revenue}}</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>
