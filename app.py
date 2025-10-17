@@ -1,7 +1,6 @@
 from flask import Flask,request,url_for,render_template,redirect,session,flash
 import mysql.connector
 import csv
-import pdfkit
 
 app=Flask(__name__)
 app.secret_key="my_secret_key"
