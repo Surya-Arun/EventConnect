@@ -48,6 +48,10 @@ Events :
 
 ![Event Page](/static/img/sc/event.png)
 
+Search Event :
+
+![Event Page](/static/img/sc/search.png)
+
 
 Add New Event:
 
@@ -57,6 +61,10 @@ Add New Event:
 Edit Event :
 
 ![Edit Page](/static/img/sc/editEvent.png)
+
+Delete Event :
+
+![Delete Event Page](/static/img/sc/deleteEvent.png)
 
 
 Attendees :
@@ -73,6 +81,12 @@ Edit Attendee :
 
 
 ![Edit Attendee Page](/static/img/sc/editAttendee.png)
+
+
+Delete Attendee :
+
+
+![Delete Attendee Page](/static/img/sc/deleteAttendee.png)
 
 
 Tickets :
@@ -110,6 +124,7 @@ Usage :
 
 Future Ideas :
 
-* Include User Roles ...
+* Include User Roles ... (Admin/Event Planner/Viewer)
 * Segregation of Past/Upcoming Events ..
-
+* Event Categories (Music/Sports/...)
+* Email Alerts as Event Remainders
