@@ -1,6 +1,6 @@
-title,description,date,location,capacity
-Music Fest 2025,A grand open-air music festival with top bands,2025-10-25,Chennai,250
-Tech Innovators Summit,A one-day tech conference featuring AI and robotics experts,2025-11-15,Bangalore,300
-Art and Soul Expo,An art exhibition showcasing creative minds across India,2025-12-10,Mumbai,150
-Startup Connect 2025,Networking event for startups and investors,2025-11-02,Hyderabad,200
-Winter Fair 2025,Festive market with food music,2025-12-20,Delhi,400
+title,description,date,location,capacity,price
+Music Fest 2025,A grand open-air music festival with top bands,2025-10-25,Chennai,250,100
+Tech Innovators Summit,A one-day tech conference featuring AI and robotics experts,2025-11-15,Bangalore,300,200
+Art and Soul Expo,An art exhibition showcasing creative minds across India,2025-12-10,Mumbai,150,700
+Startup Connect 2025,Networking event for startups and investors,2025-11-02,Hyderabad,200,250
+Winter Fair 2025,Festive market with food music,2025-12-20,Delhi,400,100
